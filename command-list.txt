@@ -1,0 +1,6 @@
+npm init -y    
+npm install express
+npm install nodemon (save edince otomatik yenileme yapar) 
+touch  index.js
+touch command-list.txt
+mkdir routes controllers
