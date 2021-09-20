@@ -1,5 +1,10 @@
+const userTable = require('../services/UserTable');
+
 module.exports = {
   get: (req, res) => {
-    res.send('User : Koray Tug');
+    // to read param => req.params.id
+    const userName = userTable.getUser();
+    // res.send(userName);
+    res.json(userName);
   },
 };
