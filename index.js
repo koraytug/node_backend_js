@@ -1,10 +1,18 @@
 const express = require('express');
-const userRoute = require('./routes/User');
+const customerRoute = require('./routes/customer-route');
 
-const app = express ();
+const dotenv = require('dotenv').config();
 
-app.use('/user', userRoute);
+const db = require('./models/db');
+
+const app = express();
+
+// db.createConnection();
+
+app.use('/customer', customerRoute);
 
 app.listen(3005, () => {
   console.log('server running on port 3005');
 });
+
+ 

@@ -1,4 +1,4 @@
-const userTable = require('../services/UserTable');
+const userTable = require('../services/customer-table');
 
 module.exports = {
   get: (req, res) => {

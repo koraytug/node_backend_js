@@ -4,3 +4,6 @@ npm install nodemon (save edince otomatik yenileme yapar)
 touch  index.js
 touch command-list.txt
 mkdir routes controllers
+
+npm install mongodb --save  
+npm install dotenv --save
